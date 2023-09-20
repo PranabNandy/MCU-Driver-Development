@@ -17,7 +17,7 @@
 -  **APB1 (P1CLK)** = 42/45 MHz    **APB2 (P2CLK)** = 84/90 MHz
 -  Processor can fetch Data and Instr from Flash simultaneously not from SRAM
 -  USB OTG and GPIO can not communicate with processor simultaneously
-  
+- Base Addr of SRAM2 = Base Addr of SRAM1  +  Sizeof(SRAM2)  
 
 ![Screenshot from 2023-09-20 21-10-01](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/c40ed0fa-7250-4b8e-a7c7-19c66db594b6)
 
