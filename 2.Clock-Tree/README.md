@@ -1,7 +1,7 @@
 # MCU-Clock-Tree
 
 
-<p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
+
 
 ### Clock Sources:
 1) Crystal Oscillator ( external to the MCU)
@@ -56,5 +56,17 @@ Go to **RCC register** then search for appropiate register like **RCC APH2 perip
 
 T bit should always be 1 for Arm cortex M4 processor
 
+=======================================================================================
+
+Now, we have  to understand How GPIO pin interrupts the processor?
+
+- whats the design?
+- How the vendor delivers the gpio interrupt to the processor?
+
+- Some peripherals deliver their interrupt to the NVIC over the EXTI line
+- Some peripherals deliver their interrupt directly to the NVIC
+- this is the design of ST. you may find some other design in TI
+
+<p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
 
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
