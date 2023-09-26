@@ -64,7 +64,7 @@ Now, we have  to understand How GPIO pin interrupts the processor?
 
 - Some peripherals deliver their interrupt to the NVIC over the EXTI line
 - Some peripherals deliver their interrupt directly to the NVIC
-- this is the design of ST. you may find some other design in TI
+- this is the design of STM. you may find some other design in TI
 
 <p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
 
