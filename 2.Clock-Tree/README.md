@@ -20,5 +20,8 @@
 -  By default, peripheral clocks of all most all peripherals will be **disabled** to **save power**
 -  A peripheral won't take or respond to your configuration values until you enable its peripheral clock 
 - In STM32 microcontrollers, peripheral clocks are managed through **RCC registers** 
+### Reset and clock control for STM32F42xxx and STM32F43xxx (RCC)
+#### Reset
+-  There are three types of reset, defined as **system Reset**, **power Reset** and **backup domain Reset**
 
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
