@@ -24,4 +24,20 @@
 #### Reset
 -  There are three types of reset, defined as **system Reset**, **power Reset** and **backup domain Reset**
 
+- **System reset** : A system reset sets all registers to their reset values except the reset flags in the clock controller CSR register and the registers in the Backup domain
+- **Power reset** : A power reset is generated when one of the following events occurs:
+```
+  Power-on/power-down reset (POR/PDR reset) or brownout (BOR) reset
+  When exiting the Standby mode
+A power reset sets all registers to their reset values except the Backup domain
+```
+- **Backup domain reset** : The backup domain reset sets all RTC registers and the RCC_BDCR register to their reset values. The BKPSRAM is not affected by this reset. The only way of resetting the BKPSRAM is through the Flash interface by requesting a protection level change from 1 to 0.
+A backup domain reset is generated when one of the following events occurs:
+```
+1. Software reset, triggered by setting the BDRST bit in the RCC Backup domain control
+register (RCC_BDCR).
+2. V DD or V BAT power on, if both supplies have previously been powered off.
+```
+![Screenshot from 2023-09-26 12-18-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/e7ae4cd3-18cc-46c1-86d7-8a5e5b76b8d9)
+
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
