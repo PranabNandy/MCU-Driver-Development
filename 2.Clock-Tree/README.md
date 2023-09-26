@@ -67,6 +67,7 @@ Now, we have  to understand How GPIO pin interrupts the processor?
 - Some peripherals deliver their interrupt directly to the NVIC
 - this is the design of ST. you may find some other design in TI
 
+<p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
 
 ### Button Interrupt
 #### How does a button issue interrupt to the processor in STM32?
@@ -76,7 +77,7 @@ Now, we have  to understand How GPIO pin interrupts the processor?
 -  Configure the trigger detection (failing/rising/both) for relevant EXTI line (This is done via EXTI controller register) 
 -  Implement the handler to service the interrupt 
 
+![Screenshot from 2023-09-24 01-10-39](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/d17ee737-ca7f-4c85-8049-48280a61c40d)
 
-<p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
 
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
