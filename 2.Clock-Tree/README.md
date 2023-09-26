@@ -40,4 +40,21 @@ register (RCC_BDCR).
 ```
 ![Screenshot from 2023-09-26 12-18-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/e7ae4cd3-18cc-46c1-86d7-8a5e5b76b8d9)
 
+=================================================================================
+
+HSI is default clock when STM32 is out of reset
+
+- Lets take a peripheral, say  **ADA** 
+- Lets take some ADC register say **CR1**
+- Lets set **SCAN bit to 1**
+
+Must enable its clock first
+
+First check which bus it is connected **(APH2)**
+
+Go to **RCC register** then search for appropiate register like **RCC APH2 peripheral clock** enable register
+
+T bit should always be 1 for Arm cortex M4 processor
+
+
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
