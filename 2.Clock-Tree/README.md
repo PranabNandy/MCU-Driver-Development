@@ -24,11 +24,10 @@
 #### Reset
 -  There are three types of reset, defined as **system Reset**, **power Reset** and **backup domain Reset**
 
-- **System reset** : A system reset sets all registers to their reset values except the reset flags in the clock controller CSR register and the registers in the Backup domain
+- **System reset** : A system reset sets all registers to their reset values except the reset flags in the **clock controller CSR register** and the registers in the **Backup domain**
 - **Power reset** : A power reset is generated when one of the following events occurs:
 ```
-  Power-on/power-down reset (POR/PDR reset) or brownout (BOR) reset
-  When exiting the Standby mode
+Power-on/power-down reset (POR/PDR reset) or brownout (BOR) reset When exiting the Standby mode
 A power reset sets all registers to their reset values except the Backup domain
 ```
 - **Backup domain reset** : The backup domain reset sets all RTC registers and the RCC_BDCR register to their reset values. The BKPSRAM is not affected by this reset. The only way of resetting the BKPSRAM is through the Flash interface by requesting a protection level change from 1 to 0.
