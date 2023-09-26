@@ -11,7 +11,7 @@
 ![Screenshot from 2023-09-23 01-59-13](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/81f403a1-7b06-4581-91cc-e7b080e70726)
 
 ### HSE:
--  HSE can be provided to the MCU via a crystal Oscillator external or source (from another circuit or another MCU) 
+-  HSE can be provided to the MCU via a crystal Oscillator or external source (from another circuit or another MCU) 
 -  On the STM32-DISC board, HSE is 8 MHz provided by the **onboard crystal Oscillator.**
 -  On NUCLEO board,  HSE is of 8MHz pulled from ST-LINK circuit.
 
