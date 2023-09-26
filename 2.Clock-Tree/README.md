@@ -67,6 +67,16 @@ Now, we have  to understand How GPIO pin interrupts the processor?
 - Some peripherals deliver their interrupt directly to the NVIC
 - this is the design of ST. you may find some other design in TI
 
+
+### Button Interrupt
+#### How does a button issue interrupt to the processor in STM32?
+-  the button is connected to a GIO pin of the microcontroller
+-  the GPIO pin should be configured to input mode
+-  the link between a GPIO port and the relevant EXTI line must be established usinf the SYSCFG_EXTICRx register
+-  Configure the trigger detection (failing/rising/both) for relevant EXTI line (This is done via EXTI controller register) 
+-  Implement the handler to service the interrupt 
+
+
 <p align="center"> <img width="600" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/3f694a66-af48-4d38-9cc3-4a014b02aacc"  /> </p>
 
 ![Screenshot from 2023-09-24 00-36-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8)
