@@ -1,6 +1,6 @@
-Now, we have  to understand How GPIO pin interrupts the processor?
-![Screenshot from 2023-09-27 23-09-45](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/941c0f12-3947-4d46-9d7a-b82157a5b2c3)
+### Now, we have  to understand How GPIO pin interrupts the processor?
 
+<p align="center"> <img width="600" height="400" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/941c0f12-3947-4d46-9d7a-b82157a5b2c3"  /> </p>
 - whats the design?
 - How the vendor delivers the **GPIO** interrupt to the processor?
 
@@ -17,8 +17,10 @@ Now, we have  to understand How GPIO pin interrupts the processor?
 -  the button is connected to a **GPIO pin** of the microcontroller
 -  the GPIO pin should be configured to input mode
 -  the link between a **GPIO port** and the relevant **EXTI( EXTI0 or EXTI1)** line must be established using the **SYSCFG_EXTICRx** register
--  
-<p align="center"> <img width="700" height="500" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/8f7d0cf6-bea5-412c-9b0a-ca447a826cd8"  /> </p>
+
+![Screenshot from 2023-09-27 23-40-26](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/50e7e1cd-1c30-4b1c-b7b1-a8a212803719)
+
+
 
 -  Configure the **trigger detection (failing/rising/both)** for **relevant EXTI** line (This is done via **EXTI controller register**) 
 -  Implement the **interrupt handler** to service the interrupt 
