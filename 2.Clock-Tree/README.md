@@ -15,7 +15,7 @@
 -  On the STM32-DISC board, HSE is 8 MHz provided by the **onboard crystal Oscillator.**
 -  On NUCLEO board,  HSE is of 8MHz pulled from ST-LINK circuit.
 
-### Peripheral Clock Configuration
+### Peripheral Clock Configuration 
 -  In modern MCUs, before using any peripheral, **you must enable its peripheral clock using peripheral clock registers**
 -  By default, peripheral clocks of all most all peripherals will be **disabled** to **save power**
 -  A peripheral won't take or respond to your configuration values until you enable its peripheral clock 
@@ -41,7 +41,7 @@ register (RCC_BDCR).
 
 =================================================================================
 
-HSI is default clock when STM32 is out of reset
+HSI is default clock when STM32 is out of reset **(main_peri_clock.c)**
 
 - Lets take a peripheral, say  **ADA** 
 - Lets take some ADC register say **CR1**
@@ -54,6 +54,22 @@ First check which bus it is connected **(APH2)**
 Go to **RCC register** then search for appropiate register like **RCC APH2 peripheral clock** enable register
 
 T bit should always be 1 for Arm cortex M4 processor
+
+
+=======================================================================================
+**(main_HSI_measurement.c)**
+
+Write a program to output HSI clock on MCU pin and measure it using oscilloscope or logic analyzer
+- Select the desired clock for the MCOx signal ( MCU clock output)
+- Output the MCOx signal on the MCU pin
+
+=======================================================================================
+
+### HSE Measurement: (main_HSE_measurement.c)
+-  Enable the HSE clock using HSEON bit (RCC_CR)
+-  Wait until HSE clock from the external crystal stabilizes( only if crystal is connected) (Indicates if the high-speed external oscillitor is stable or not)
+-  Switch the system clock to HSE (RCC_CFGR)
+-   Do MCO1 settings to measure it
 
 =======================================================================================
 
