@@ -72,6 +72,12 @@ Write a program to output HSI clock on MCU pin and measure it using oscilloscope
 -   Do MCO1 settings to measure it
 
 =======================================================================================
+### Vector Table:
+- Table of addresses or pointers
+- Addresses of exception handlers ( system expection + interrupts)
+![Screenshot from 2023-09-23 02-16-17](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/e91230e5-27f7-4d76-bafd-f787dfa67ca7)
+
+
 
 Now, we have  to understand How GPIO pin interrupts the processor?
 
