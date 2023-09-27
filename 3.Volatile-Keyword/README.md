@@ -1,10 +1,12 @@
 ### Now, we have  to understand How GPIO pin interrupts the processor?
 
 <p align="center"> <img width="600" height="400" src="https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/941c0f12-3947-4d46-9d7a-b82157a5b2c3"  /> </p>
+
 - whats the design?
 - How the vendor delivers the **GPIO** interrupt to the processor?
 
 - Some peripherals deliver their interrupt to the **NVIC** over the **EXTI line**
+
 ![Screenshot from 2023-09-27 23-12-49](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/b8e3480f-89cf-4679-8072-d7b6d17d413c)
 
 
