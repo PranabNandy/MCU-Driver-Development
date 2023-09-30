@@ -32,3 +32,13 @@
 ![Screenshot from 2023-09-27 23-29-59](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/6b2ab30e-4f0d-4008-8820-43fe9a17596e)
 
 ===================================================================================
+### Without using volatile keyword
+![Screenshot from 2023-09-30 07-07-52](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/0f24b129-005d-4fc4-9775-5ccdc76141a6)
+![Screenshot from 2023-09-25 23-08-41](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/b45a420c-7db9-46ce-b233-6afc35c14141)
+
+
+
+### volatile keyword
+![Screenshot from 2023-09-30 07-16-13](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/0340466d-2037-4175-9b9b-de0a012aec2a)
+
+![Screenshot from 2023-09-25 23-11-32(1)](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/0d3f2fb4-7622-4504-9c05-15235f18f5e2)
