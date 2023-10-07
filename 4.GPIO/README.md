@@ -33,8 +33,9 @@ When the I/O port is programmed as Input:
 - The data present on the I/O pin are sampled into the input data register every AHB1 clock cycle
 - A read access to the input data register provides the I/O State
 
-#### In Input mode, output circuit will be off.
-#### In Output mode, input circuit still be on. 
+**In Input mode, output circuit will be off.**
+**In Output mode, input circuit still be on.**
+ 
 
 ## GPIO Pin in OUTPUT mode
 
@@ -50,3 +51,8 @@ Here we add external **VOL source and 1 Kohm register**
 ![Screenshot from 2023-10-07 08-51-26](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/19c624ed-fb46-47b1-82b7-7dbd5e204967)
 -  In some application we need high and low state then go with Push Pull configuration 
 -  IN some application we need only high state then go with Open drain which uses external register and VOL source to achive the goal. 
+
+## Alternate Function Configuration
+![Screenshot from 2023-10-07 09-07-43](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/f310dd45-25bf-498a-a91a-d8b231aae56f)
+![Screenshot from 2023-10-07 09-08-28](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/da6188f0-c00e-4248-a68a-bb56c6d280be)
+
