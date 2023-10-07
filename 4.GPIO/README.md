@@ -32,3 +32,21 @@ When the I/O port is programmed as Input:
 -  The pull-up and pull-down resistors are activated depending on the value in the GPIOx_PUPDR register
 - The data present on the I/O pin are sampled into the input data register every AHB1 clock cycle
 - A read access to the input data register provides the I/O State
+
+#### In Input mode, output circuit will be off.
+#### In Output mode, input circuit still be on. 
+
+## GPIO Pin in OUTPUT mode
+
+#### When system input is 1
+
+![Screenshot from 2023-10-07 08-42-01](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/78f4b8d9-296a-4e9f-b17d-f9396efd9b70)
+
+#### When system input is 0
+![Screenshot from 2023-10-07 08-42-55](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/9573e30a-04a0-4c68-9fa4-1ca16b689a03)
+
+#### Open Drain Mode
+Here we add external **VOL source and 1 Kohm register**
+![Screenshot from 2023-10-07 08-51-26](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/19c624ed-fb46-47b1-82b7-7dbd5e204967)
+-  In some application we need high and low state then go with Push Pull configuration 
+-  IN some application we need only high state then go with Open drain which uses external register and VOL source to achive the goal. 
