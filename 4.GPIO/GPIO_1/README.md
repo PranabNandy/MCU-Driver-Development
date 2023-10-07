@@ -3,6 +3,9 @@
 
 
 # GPIO Output speed register
+![Screenshot from 2023-10-07 11-36-56](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/80a7f2f9-1356-4132-8d7c-af8cf4774480)
+
+
 ![Screenshot from 2023-10-07 12-13-38](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/c598b713-88a2-42a6-966f-54498a5cb7b4)
 
 
