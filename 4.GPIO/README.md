@@ -27,13 +27,14 @@
 
 When the I/O port is programmed as Input:
 
--  The output buffer is disabled
+-  The **output buffer** is disabled
 -  The Schmitt trigger input is activated
--  The pull-up and pull-down resistors are activated depending on the value in the GPIOx_PUPDR register
+-  The pull-up and pull-down resistors are activated depending on the value in the **GPIOx_PUPDR** register
 - The data present on the I/O pin are sampled into the input data register every AHB1 clock cycle
 - A read access to the input data register provides the I/O State
 
 **In Input mode, output circuit will be off.**
+
 **In Output mode, input circuit still be on.**
  
 
