@@ -6,12 +6,12 @@
 **What is Device Header file and what it contains ?**
 
 This is a header file ("C" header file in our case) which contains Microcontroller specific details such as
-- The base addresses of various memories present in the microcontroller such as (Flash, SRAM1,SRAM2,ROM,etc)
-- The base addresses of various bus domains such as (AHBx domain, APBx domain)
-- Base addresses of various peripherals present in different bus domains of the microcontroller
-- Clock management macros ( i.e clock enable and clock disable macros)
-- IRQ definitions
-- Peripheral Register definition structures
+- The base addresses of various **Memories** present in the microcontroller such as (Flash, SRAM1,SRAM2,ROM,etc)
+- The base addresses of various **Bus Domains** such as (AHBx domain, APBx domain)
+- Base addresses of various **Peripherals** present in different bus domains of the microcontroller
+- **Clock management** macros ( i.e clock enable and clock disable macros)
+- **IRQ definitions**
+- **Peripheral Register** definition structures
 - Peripheral register bit definitions
 - Other useful microcontroller configuration macros
 
