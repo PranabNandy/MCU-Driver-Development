@@ -42,4 +42,12 @@ We point VTOR to the starting address of **Flash Memory (0x0800_0000)**
 
 ![Screenshot from 2023-11-05 14-09-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/967f899e-5c54-45fd-aee4-e894f30f6db1)
 
+### Clock Gating
 
+![Screenshot from 2023-11-05 14-28-54](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/e8408f46-2cea-4c89-abee-fedd36c36119)
+
+
+
+Now we know,
+-  How to flash a device
+-  How to enable a peripheral
