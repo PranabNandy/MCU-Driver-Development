@@ -16,4 +16,30 @@
 
 ![Screenshot from 2023-09-23 01-45-36](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/4a7fd8b9-c27b-4779-8358-0ca5f457258f)
 
+# Boot Up:
+For ARM you need to setup the vector table in the **reset handler.**
+
+You need to locate the vector table at the offset directed by the **VTOR register** (Vector Table Offset Register)/ **VBAR in Arm-A.**
+
+When ARM cortex boots up, it expects the first memory pointer by VTOR should be **( SP + reset Handler).**
+
+SP will store CPU core's SP and reset vector/handler to its PC.
+
+Reset vector is the address to ISR that the core has to execute.
+
+
+
 ![Screenshot from 2023-11-02 21-38-00](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/0eef13a0-b309-40fb-9df8-21dd6bd19915)
+
+
+VTOR has point to a defined location.
+
+
+We point VTOR to the starting address of **Flash Memory (0x0800_0000)**
+
+![Screenshot from 2023-11-02 23-10-56](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/5705d8c7-a48f-4496-b59d-9b4697568448)
+
+
+![Screenshot from 2023-11-05 14-09-25](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/967f899e-5c54-45fd-aee4-e894f30f6db1)
+
+
