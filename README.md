@@ -16,7 +16,12 @@
 
 ![Screenshot from 2023-09-23 01-45-36](https://github.com/PranabNandy/MCU-Driver-Development/assets/80820274/4a7fd8b9-c27b-4779-8358-0ca5f457258f)
 
-# Boot Up:
+
+# Summary:
+![Screenshot from 2023-11-05 17-12-28](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/bf68678c-43da-4af8-b61b-eebf8e67dc79)
+
+
+## Boot Up:
 For ARM you need to setup the vector table in the **reset handler.**
 
 You need to locate the vector table at the offset directed by the **VTOR register** (Vector Table Offset Register)/ **VBAR in Arm-A.**
@@ -47,7 +52,25 @@ We point VTOR to the starting address of **Flash Memory (0x0800_0000)**
 ![Screenshot from 2023-11-05 14-28-54](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/e8408f46-2cea-4c89-abee-fedd36c36119)
 
 
+### Clock Enable
+Actually we need to go to APH1 peripheral clock to enable the GPIOA
 
-Now we know,
+![Screenshot from 2023-11-05 14-56-43](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/b829e7e5-78ed-4dbd-86b6-c2fdd7f25084)
+
+![Screenshot from 2023-11-05 14-58-08](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/c398b855-9d23-4236-aae1-38dbb44a2953)
+
+- So far we have completed the Enabling of GPIOA
+
+### GPIO Mode setting 
+![Screenshot from 2023-11-05 16-48-48](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/6c21c097-12b6-4917-a810-f2adaef60b44)
+![Screenshot from 2023-11-05 16-48-32](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/c7628db2-3686-4c8a-a150-54d0a9812877)
+![Screenshot from 2023-11-05 17-06-29](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/61939568-5ff3-4c65-a788-e4801f001c6e)
+
+### RCC Register Map
+![Screenshot from 2023-11-05 17-15-36](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/f12387a3-22df-4fd0-b0c8-d662576ce189)
+
+**Now we know,**
 -  How to flash a device
 -  How to enable a peripheral
+-  Set the Mode bit (in/out)
+-  Put the data on output data register
