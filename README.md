@@ -55,6 +55,10 @@ We point VTOR to the starting address of **Flash Memory (0x0800_0000)**
 ### Clock Enable
 Actually we need to go to APH1 peripheral clock to enable the GPIOA
 
+RCC APB1 clock enable register ( by default all values are 0)
+
+we have to enable some peripheral out of it
+
 ![Screenshot from 2023-11-05 14-56-43](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/b829e7e5-78ed-4dbd-86b6-c2fdd7f25084)
 
 ![Screenshot from 2023-11-05 14-58-08](https://github.com/PranabNandy/MCU-Driver-Development/assets/34576104/c398b855-9d23-4236-aae1-38dbb44a2953)
